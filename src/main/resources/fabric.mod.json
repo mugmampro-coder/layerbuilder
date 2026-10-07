@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "layerbuilder",
+  "version": "${version}",
+  "name": "Layer Builder",
+  "description": "Auto-places the blocks of your current Litematica layer, with correct orientation. Build-only: never breaks blocks.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.layerbuilder.LayerBuilderClient"] },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*",
+    "litematica": "*"
+  }
+}
