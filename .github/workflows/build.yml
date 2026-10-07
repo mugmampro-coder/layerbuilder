@@ -13,7 +13,7 @@ jobs:
           java-version: 21
       - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: "9.2.0"
+          gradle-version: "current"
       - name: Look up Litematica and malilib versions for 1.21.11
         run: |
           get() { curl -s -G "https://api.modrinth.com/v2/project/$1/version" --data-urlencode 'game_versions=["1.21.11"]' --data-urlencode 'loaders=["fabric"]' | jq -r '.[0].id'; }
